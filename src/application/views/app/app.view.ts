@@ -4,14 +4,16 @@ import { Router } from "@angular/router";
 
 @Component({
     selector: 'tec-app',
-    templateUrl: 'app.view.html'
+    template: '<router-outlet></router-outlet>'
 })
 
 export class AppView {
 
    
+    constructor(private router: Router) {
 
+}
     ngOnInit() {
-        
+        //this.router.navigate(['/login']);
     }
 }

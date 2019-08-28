@@ -1,8 +1,9 @@
 
 <div class="row justify-content-center align-items-center form-sign-wraper">
     <div class="col-6 form-signin text-center">
+        <img class="mb-4" src="/assets/images/logo.jpg" alt="" width="180" />
         <form [formGroup]="form">
-            <label for="usuario" class="sr-only">Usuário</label>
+            <label for="usuario" class="sr-only">Matricula</label>
             <input 
             id="usuario"
             type="text"
@@ -18,7 +19,10 @@
             class="form-control form-control-sm"
             autocomplete="senha"  placeholder="Senha"/>
             
-            <button class="btn btn-primary btn-block" type="submit">ENTRAR</button>
+            <a href="/unauthorized"> <button class="btn btn-primary btn-block" type="submit" >ENTRAR</button></a>
         </form>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
     </div>
 </div>
