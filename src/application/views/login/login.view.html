@@ -1,27 +1,21 @@
 
 <div class="row justify-content-center align-items-center form-sign-wraper">
     <div class="col-6 form-signin text-center">
-        <img class="mb-4" src="/assets/images/logo.png" alt="" width="180" />
-        <!--Messages-->
-        <p-messages [(value)]="messages"></p-messages>
-
-        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <form [formGroup]="form">
             <label for="usuario" class="sr-only">Usuário</label>
             <input 
             id="usuario"
             type="text"
-            class="form-control form-control-sm"
-            [ngClass]="{ 'is-invalid': form.isSubmited() && fields.usuario.errors }"
             formControlName="usuario"
+            class="form-control form-control-sm"
             autocomplete="usuario"  placeholder="Matricula"/>
             
             <label for="senha" class="sr-only">Senha</label>
             <input
             id="senha"
             type="password"
-            class="form-control form-control-sm"
-            [ngClass]="{ 'is-invalid': form.isSubmited() && fields.senha.errors }"
             formControlName="senha"
+            class="form-control form-control-sm"
             autocomplete="senha"  placeholder="Senha"/>
             
             <button class="btn btn-primary btn-block" type="submit">ENTRAR</button>
