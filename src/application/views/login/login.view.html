@@ -5,9 +5,10 @@
         <form [formGroup]="form">
             <label for="usuario" class="sr-only">Matricula</label>
             <input 
-            id="usuario"
+            inputId="usuario"
             type="text"
             formControlName="usuario"
+            
             class="form-control form-control-sm"
             autocomplete="usuario"  placeholder="Matricula"/>
             
@@ -19,7 +20,7 @@
             class="form-control form-control-sm"
             autocomplete="senha"  placeholder="Senha"/>
             
-            <a href="/unauthorized"> <button class="btn btn-primary btn-block" type="submit" >ENTRAR</button></a>
+             <button (click)="onClickMe()" class="btn btn-primary btn-block" type="submit" >ENTRAR</button>
         </form>
     </div>
     <div>
